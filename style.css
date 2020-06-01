@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'sans-serif';
+  text-decoration: none;
+}
+
+
+body {
+   padding: 50px;
+   text-align: center;
+}
+
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.container {
+  height: 360px;
+  width: 360px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #7b00e0, #ae31d9);
+  transition: all .3s ease-in-out;
+  padding: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+
+.container:hover {
+  height: 560px;
+  width: 420px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px 0px rgba(0,0,0,.5);
+}
+
+
+.container .wrapper img {
+  position: relative;
+  border-radius: 50%;
+  z-index: 20;
+  display: block;
+  height: 300px;
+  width: 300px;
+  border: 6px solid white;
+  object-fit: cover;
+  margin: 20px auto;
+  transition: all .3s ease-in-out;
+}
+
+.container:hover .wrapper img.active {
+  height: 540px;
+  width: 400px;
+  margin: 0px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.wrapper .title {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+.wrapper .place {
+  color: #fff;
+  font-size: 18px;
+}
+
+.content {
+  margin-top: 10px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 50px;
+  border-radius: 6px;
+  outline: none;
+  border: 0;
+  transition: all 0.3s;
+}
+
+.btn button:hover {
+  transform: scale(1.2);
+}
+
+.container .icons {
+  position: relative;
+  margin-top: -530px;
+  list-style: none;
+}
+
+.icons li {
+  transition: all .3s;
+}
+
+.icons li:hover {
+  transform: scale(1.2);
+}
+
+.container .icons li {
+  height: 40px;
+  width: 10px;
+  margin: 15px 0; 
+  opacity: 0;
+  margin-left: -100px;
+  transition: all .5s ease;
+}
+
+.container:hover .icons li {
+  margin-left: 1px;
+  opacity: 1;
+}
+
+.container:hover .icons li:nth-child(2) {
+ transition-delay: .2s
+}
+.container:hover .icons li:nth-child(3) {
+ transition-delay: .4s
+}
+
+
+.container .icons li a {
+  color: #ae31d9;
+  border-radius: 50%;
+  background: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+}
+
